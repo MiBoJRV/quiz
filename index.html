@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		name="viewport">
+	<title>Live Busy Quiz</title>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600&display=swap"
+		rel="stylesheet">
+
+	<link href="css/scss/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+</head>
+
+<body>
+	<section class="quiz">
+		<div class="quiz-content">
+			<div class="quiz-container">
+				<div class="quiz-section" id="quiz">
+					<div class="question-container">
+						<h2 class="question-title">Live Busy Status</h2>
+						<p class="question-description">Busy Status Bar can integrate with desktop software and
+							automatically activate when you're on a
+							call, live on stream, recording audio or when a certain program is active.</p>
+						<div class="question-text"></div>
+						<div class="options"></div>
+						<div class="question-number">1/5</div>
+					</div>
+				</div>
+
+				<div class="registration-form" style="display: none;">
+					<h2 class="form-title">Contact Information</h2>
+					<form id="regForm" novalidate>
+						<div class="form-group">
+							<input id="name" name="name" placeholder="Your Name" type="text">
+							<span class="error-message" data-error="name"></span>
+						</div>
+						<div class="form-group">
+							<input id="email" name="email" placeholder="Email" type="email">
+							<span class="error-message" data-error="email"></span>
+						</div>
+						<div class="form-group">
+							<input id="phone" name="phone" type="tel">
+							<span class="error-message" data-error="phone"></span>
+						</div>
+						<button class="submit-btn" type="submit">Send</button>
+					</form>
+				</div>
+			</div>
+			<div class="quiz-image">
+				<img alt="quiz-img" src="images/quiz-img.jpg">
+			</div>
+		</div>
+
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+	<script src="js/components/quiz.js"></script>
+	<script src="js/components/ImageOffset.js"></script>
+	<script type="module" src="js/main.js"></script>
+</body>
+
+</html>

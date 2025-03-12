@@ -1,0 +1,47 @@
+.quiz {
+
+	&-content {
+		display: flex;
+		gap: 30px;
+		max-width: 1440px;
+		margin: 0 auto;
+		padding: 20px;
+		padding-top: 100px;
+		position: relative;
+	}
+
+	&-container {
+		padding: 20px;
+		position: relative;
+		z-index: 9;
+		
+		@media only screen and (max-width: 991px) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	&-section {
+		max-width: 490px;
+	}
+
+	&-image {
+		position: absolute;
+		right: 0;
+		max-width: 1280px;
+		width: 100%;
+		overflow: hidden;
+		max-height: 563px;
+		
+		@media only screen and (max-width: 991px) {
+			position: static;
+		}
+
+		img {
+			object-fit: cover;
+			min-height: 563px;
+			width: 1280px;
+			height: 783px;
+		}
+	}
+}

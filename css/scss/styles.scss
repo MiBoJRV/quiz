@@ -1,0 +1,65 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/reset';
+
+body {
+	font-family: $main-font;
+}
+
+@import 'components/quiz';
+@import 'components/questions';
+@import 'components/options';
+@import 'components/form';
+
+@media (max-width: 992px) {
+	.quiz-content {
+		flex-direction: column;
+	}
+
+	.quiz-image {
+		order: -1;
+	}
+}
+
+@media (max-width: 768px) {
+	.quiz-container {
+		margin: 10px;
+		padding: 15px;
+	}
+
+	.option {
+		padding: 12px 15px;
+	}
+
+	.question-title {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	.question-description {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 480px) {
+	.quiz-container {
+		margin: 0;
+		padding: 10px;
+		border-radius: 0;
+	}
+
+	.question {
+		&-container {
+			padding: 15px 0;
+		}
+
+		&-number {
+			font-size: 16px;
+		}
+	}
+
+	.option {
+		font-size: 14px;
+	}
+}
